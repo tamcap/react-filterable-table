@@ -834,7 +834,7 @@ return /******/ (function(modules) { // webpackBootstrap
 								_react2.default.createElement('input', { type: 'text', className: 'form-control filter-input', value: filter, onChange: this.filterChanged, ref: 'filter', placeholder: 'Filter', autoFocus: this.props.autofocusFilter }),
 								_react2.default.createElement(
 									'div',
-									{ 'class': 'input-group-append' },
+									{ className: 'input-group-append' },
 									_react2.default.createElement(
 										'span',
 										{ className: 'input-group-text close clear-filter', onClick: function onClick() {
