@@ -22,7 +22,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "npm": "^6.1.0",
-    "react-pager": "^1.3.2"
+    "react-pager": "github:fibo23/pager#master"
   },
   "peerDependencies": {
     "react": ">=0.14.0 || >=15.0.0",

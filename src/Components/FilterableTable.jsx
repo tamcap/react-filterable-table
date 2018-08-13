@@ -241,7 +241,7 @@ class FilterableTable extends React.Component {
 
 		let loading = this.state.loading &&
 			(
-				this.props.loadingMessage || 
+				this.props.loadingMessage ||
 				<div className="well text-center">
 					Loading...
 				</div>
@@ -302,7 +302,7 @@ class FilterableTable extends React.Component {
 				current={this.state.page}
 				visiblePages={this.state.visiblePages}
 				onPageChanged={this.updatePage}
-				className={this.props.pagerTopClassName || "pagination-sm pull-right"}
+				className={this.props.pagerTopClassName || "pagination-sm float-right"}
 				titles={this.props.pagerTitles}
 			/>;
 
@@ -339,7 +339,7 @@ class FilterableTable extends React.Component {
 					autofocusFilter={this.props.autofocusFilter}
 				>
 				</Header>
-				
+
 
 				<div className="table-container">
 					{loading}

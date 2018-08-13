@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import ExactFilters from './ExactFilters'; 
+import ExactFilters from './ExactFilters';
 
 class Header extends React.Component {
 	constructor(props) {
@@ -40,7 +40,7 @@ class Header extends React.Component {
 		);
 
 		let perPageSelect = this.props.pagersVisible !== false && this.props.pageSizes && this.props.pageSizes.length > 0
-			?  <select className="form-control pull-sm-right pull-md-right pull-lg-right" onChange={updatePageSize} value={this.props.pageSize}>
+			?  <select className="form-control float-right" onChange={updatePageSize} value={this.props.pageSize}>
 					{this.props.pageSizes.map((p, i) =>
 						<option value={p} key={i}>{p} per page</option>
 					)}
@@ -60,10 +60,10 @@ class Header extends React.Component {
 							</span>
 						</span>
 					</div>
-					<div className="col-sm-5 col-sm-push-4">
+					<div className="col-sm-5 order-sm-5">
 						{perPageSelect}
 					</div>
-					<div className="col-sm-4 col-sm-pull-4 text-center text-muted record-count">
+					<div className="col-sm-4 order-sm-4 text-center text-muted record-count">
 						{loading || recordCountMessage}
 					</div>
 				</div>
