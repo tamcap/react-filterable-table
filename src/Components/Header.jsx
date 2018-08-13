@@ -53,12 +53,14 @@ class Header extends React.Component {
 				{this.props.upperHeaderChildren}
 				<div className="row header-row">
 					<div className="col-sm-3 filter-container">
-						<span className="filter-container">
+						<div className="input-group">
 							<input type="text" className="form-control filter-input" value={filter} onChange={this.filterChanged} ref="filter" placeholder="Filter" autoFocus={this.props.autofocusFilter} />
-							<span className="close clear-filter" onClick={() => this.filterChanged('')}>
-								&times;
-							</span>
-						</span>
+							<div class="input-group-append">
+								<span className="input-group-text close clear-filter" onClick={() => this.filterChanged('')}>
+									&times;
+								</span>
+							</div>
+						</div>
 					</div>
 					<div className="col-sm-5 order-sm-5">
 						{perPageSelect}
